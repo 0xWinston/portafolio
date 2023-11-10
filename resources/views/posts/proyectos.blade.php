@@ -9,11 +9,11 @@
         @if ($posts->count())
             <div class="flex flex-col">
                 @foreach ($posts as $post)
-                    <div class="text-center bg-sky-950 text-white text-base border-2 border-slate-300 rounded mt-3">
+                    <div class="text-center bg-red-900 text-white text-base border-2 border-slate-300 rounded mt-3">
                         <h1 class="font-bold uppercase">
                             {{$post->titulo}}
                         </h1>
-                        <div class="flex justify-between p-6">
+                        <div class="flex justify-around p-6">
                             <img src="{{asset('uploads/'.$post->imagen)}}" alt="Imagen {{$post->titulo}}" width="300px" height="300px">
                             <div class="">
                                 <div class="ml-4 text-right text-white flex flex-col justify-center">
